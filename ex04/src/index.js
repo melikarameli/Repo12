@@ -1,12 +1,14 @@
 // Only change code below this line
+var fibonacci = [0, 1, 1, 2, 3, 5, 8, 13];
 function sumFibonacci(num) {
-    var x = [];
-    if (x % 2 != 0 || x <= num) {
-           var sum = num + x;
-           return sum;
-        } else {
-            return 0;
-        }
+    sum = 0;
+    for (i = 0; fibonacci[i] <= num; i++) {
+        x = fibonacci[i];
+        if (x % 2 != 0) {
+           sum = sum + x;
+        } 
+    }
+    return sum;
 }
 // Only change code above this line
 
